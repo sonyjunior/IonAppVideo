@@ -1,12 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-title>
-      Videos App
-    </ion-title>
+    <ion-title> Videos App </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" color="light">
-
   <ion-searchbar placeholder="Buscar"></ion-searchbar>
+
+  <ion-list>
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img
+          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vg9HwPrCSh1lwihZokNeOsa436e.jpg"
+        />
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <div>
+          <h1>Mad Max 1</h1>
+          <p>24/05/1980 (BR) - 1h 25m</p>
+          <p>Aventura, Ação, Thriller, Ficção científica</p>
+        </div>
+      </ion-label>
+
+      <ion-chip color="success" outline>
+        <ion-label>76 %</ion-label>
+      </ion-chip>
+
+
+    </ion-item>
+  </ion-list>
 </ion-content>
