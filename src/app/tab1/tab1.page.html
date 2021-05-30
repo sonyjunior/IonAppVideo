@@ -10,7 +10,7 @@
   <ion-list>
 
     <ion-item-sliding *ngFor="let filme of listaVideos">
-    <ion-item lines="full">
+    <ion-item lines="full" (click)="exibirFilme(filme)">
       <ion-thumbnail slot="start">
         <img
           [src]="filme.cartaz"
@@ -28,34 +28,6 @@
 
       <ion-chip color="success" outline>
         <ion-label>{{filme.classificacao}} %</ion-label>
-      </ion-chip>
-    </ion-item>
-
-    <ion-item-options side="end">
-      <ion-item-option color="itudev" (click)="exibirAlertaFavorito()">
-        <ion-icon slot="icon-only" name="star"></ion-icon>
-
-      </ion-item-option>
-    </ion-item-options>
-  </ion-item-sliding>
-
-  <ion-item-sliding>
-    <ion-item lines="full">
-      <ion-thumbnail slot="start">
-        <img
-          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iHVDy91mpqUbUDdG6hfyniFQPx4.jpg"
-        />
-      </ion-thumbnail>
-      <ion-label class="ion-text-wrap">
-        <div>
-          <h1>O Exterminador do Futuro</h1>
-          <p>25/03/1985 (BR) - 1h 47m</p>
-          <p>Ação, Thriller, Ficção científica</p>
-        </div>
-      </ion-label>
-
-      <ion-chip color="success" outline>
-        <ion-label>76 %</ion-label>
       </ion-chip>
     </ion-item>
 
