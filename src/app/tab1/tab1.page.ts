@@ -39,6 +39,24 @@ export class Tab1Page {
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/we7AZegHzRAe2sIui4F74dAJ2b.jpg',
       generos: ['Aventura','Ação'],
       pagina: '/indiana-jones'
+    },
+    {
+      nome: 'Os Caça-Fantasmas',
+      lancamento: '21/12/1984 (BR>',
+      duracao: '1h 47m',
+      classificacao: 74,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7ESJStBUQf4ogoRGoa1aqyf6qXq.jpg',
+      generos: ['Comédia','Fantasic'],
+      pagina: '/'
+    },
+    {
+      nome: 'E.T. - O Extraterrestre',
+      lancamento: '25/12/1982',
+      duracao: '1h 55m',
+      classificacao: 75,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8j5igb0iuV9TYudw9SuMV5GT9K9.jpg',
+      generos: ['Ficção científica','Aventura','Família', 'Fantasia'],
+      pagina: '/et'
     }
   ];
 
