@@ -1,3 +1,4 @@
+import { IFilme } from './../models/IFilmes.models';
 import { Component } from '@angular/core';
 import { AlertController, ToastController } from '@ionic/angular';
 
@@ -7,6 +8,34 @@ import { AlertController, ToastController } from '@ionic/angular';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+
+  titulo = 'Vídeos APP';
+  listaVideos: IFilme[] = [
+    {
+      nome: 'De Volta para o Futuro',
+      lancamento: '1985',
+      duracao: '1h 56m',
+      classificacao: 83,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i996T0lI1fGtFEowiH3V6eZthL0.jpg',
+      generos: ['Aventura', 'Comédia', 'Ficção científica', 'Família']
+    },
+    {
+      nome: 'Guerra nas Estrelas',
+      lancamento: '17/11/1977',
+      duracao: '2h 1m',
+      classificacao: 82,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iSNdwFauC1QODm1ntk07wqJV1pf.jpg',
+      generos: ['Aventura', 'Ação', 'Ficção científica']
+    },
+    {
+      nome: 'Indiana Jones e o Templo da Perdição',
+      lancamento: '23/05/1984',
+      duracao: '1h 58m',
+      classificacao: 73,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/we7AZegHzRAe2sIui4F74dAJ2b.jpg',
+      generos: ['Aventura','Ação']
+    }
+  ];
 
   constructor(public alertController: AlertController, public toastController: ToastController) {}
 

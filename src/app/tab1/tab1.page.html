@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-title> Videos App </ion-title>
+    <ion-title> {{ titulo }} </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,23 +9,25 @@
 
   <ion-list>
 
-    <ion-item-sliding>
+    <ion-item-sliding *ngFor="let filme of listaVideos">
     <ion-item lines="full">
       <ion-thumbnail slot="start">
         <img
-          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vg9HwPrCSh1lwihZokNeOsa436e.jpg"
+          [src]="filme.cartaz"
         />
       </ion-thumbnail>
       <ion-label class="ion-text-wrap">
         <div>
-          <h1>Mad Max 1</h1>
-          <p>24/05/1980 (BR) - 1h 25m</p>
-          <p>Aventura, Ação, Thriller, Ficção científica</p>
+          <h1>{{filme.nome}}</h1>
+          <p>{{filme.lancamento}} - {{filme.duracao}}</p>
+          <ion-badge color="light" *ngFor="let genero of filme.generos" >
+            {{genero}}
+          </ion-badge>
         </div>
       </ion-label>
 
       <ion-chip color="success" outline>
-        <ion-label>76 %</ion-label>
+        <ion-label>{{filme.classificacao}} %</ion-label>
       </ion-chip>
     </ion-item>
 
