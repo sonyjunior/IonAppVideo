@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { StarWarsPageRoutingModule } from './star-wars-routing.module';
+import { LoginPageRoutingModule } from './login-routing.module';
 
-import { StarWarsPage } from './star-wars.page';
+import { LoginPage } from './login.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    StarWarsPageRoutingModule
+    LoginPageRoutingModule
   ],
-  declarations: [StarWarsPage]
+  declarations: [LoginPage]
 })
-export class StarWarsPageModule {}
+export class LoginPageModule {}
