@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Dados da Série</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-card *ngIf="filme">
+    <ion-card-header>
+      <img
+        *ngIf="filme.poster_path"
+        src="https://www.themoviedb.org/t/p/w500/{{filme.poster_path}}"
+      />
+      <ion-icon *ngIf="!filme.poster_path" name="videocam-off"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h1>
+        {{filme.name}} -
+        <ion-chip color="success"> {{filme.vote_average}}%</ion-chip>
+      </h1>
+      <p>{{filme.first_air_date | date:'shortDate'}}</p>
+    </ion-card-content>
+    <ion-item>
+      <ion-badge color="light" *ngFor="let idGenero of filme.genre_ids">
+        {{generos[idGenero]}}
+      </ion-badge>
+    </ion-item>
+    <ion-item>
+      <p class="overview">{{filme.overview}}</p>
+    </ion-item>
+  </ion-card>
+</ion-content>
