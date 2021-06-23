@@ -1,17 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Sobre
+      Sobre APPMax
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <div class="texto">
-    <img src="https://avatars.githubusercontent.com/u/13555693?v=4">
-     <h1>M R Nizzola</h1>
-     <p>Professor Etec Itu-SP</p>
-     <a href="mailto:marcio.nizzola@etec.sp.gov.br">marcio.nizzola@etec.sp.gov.br</a>
+    <img src="C:\Users\Junior\Documents\Etec2021\PAM-Nizolla\ionicVideosApp\src\app\tab3\img.jpg">
+     <h1>Junior</h1>
+     <p>Aluno da Etec Martinho Di Ciero</p>
+     <a href="mailto:rolimjunior@hotmail.com">rolimjunior@hotmail.com</a>
     </div>
+
+<ion-list>
+  <button menuClose ion-item **ngFor="let p of items" (click)="openPage(p)")>
+    {{p.title}}
+  </button>
+  <button menuClose ion-item (click)="logout()">
+    Sair
+  </button>
+</ion-list>
+
+<div> 
+  <ion-list> 
+    <ion-list-header> 
+       
+    </ion-list-header> 
+    <ion-item (click) = "logoutClicked ()"> Logout </ion-item> 
+  </ion-list > 
+</div>
 
 </ion-content>

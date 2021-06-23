@@ -17,7 +17,7 @@ import { IGenero } from '../models/IGenero.model';
 
 export class Tab1Page implements OnInit {
 
-  titulo = 'Filmes APP';
+  titulo = 'Filmes APPMax';
 
   listaFilmes: IListaFilmes;
 

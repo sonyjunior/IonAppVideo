@@ -14,7 +14,7 @@ import { IListaFilmes } from '../models/IListaFilmes.model';
 })
 export class Tab2Page {
 
-  titulo = 'Series APP';
+  titulo = 'Series APPMax';
 
   listaFilmes: IListaFilmes;
 
